@@ -1,6 +1,6 @@
 name: rubargo_ui_kit
 description: A new Flutter package project.
-version: 0.0.5
+version: 0.0.6
 homepage: https://github.com/VladyslavLopata/rubargo_ui_kit
 
 environment:
@@ -17,3 +17,9 @@ dev_dependencies:
   flutter_lints: ^1.0.4
 
 flutter:
+  fonts:
+    - family: e-Ukraine
+      fonts:
+        - asset: assets/fonts/e-Ukraine-Regular.otf
+        - asset: assets/fonts/e-Ukraine-Light.otf
+        - asset: assets/fonts/e-Ukraine-UltraLight.otf
