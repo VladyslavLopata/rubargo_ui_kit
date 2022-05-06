@@ -14,6 +14,7 @@ class BargoLink extends StatelessWidget {
     this.text, {
     Key? key,
     this.icon,
+    this.onTap,
   })  : _linkSize = _ELinkSize.big,
         super(key: key);
 
@@ -21,6 +22,7 @@ class BargoLink extends StatelessWidget {
     this.text, {
     Key? key,
     this.icon,
+    this.onTap,
   })  : _linkSize = _ELinkSize.medium,
         super(key: key);
 
@@ -28,12 +30,14 @@ class BargoLink extends StatelessWidget {
     this.text, {
     Key? key,
     this.icon,
+    this.onTap,
   })  : _linkSize = _ELinkSize.small,
         super(key: key);
 
   final String text;
   final Widget? icon;
   final _ELinkSize _linkSize;
+  final VoidCallback? onTap;
 
   BargoTextStyle _getTextStyle() {
     switch (_linkSize) {
@@ -49,6 +53,7 @@ class BargoLink extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return StatefulButton(
+      onTap: onTap,
       builder: (context) {
         final buttonState = ButtonState.of(context);
 
