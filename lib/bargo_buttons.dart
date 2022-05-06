@@ -253,7 +253,7 @@ class BargoButton extends StatelessWidget {
                   child: child,
                 ),
                 desktop: (context) => DefaultBargoTextStyle(
-                  style: BargoTextStyle.h4Heading,
+                  style: BargoTextStyle.h5Heading,
                   child: child,
                 ),
               ),
