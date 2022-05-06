@@ -118,6 +118,8 @@ class _StatefulButtonState extends State<StatefulButton> {
         if (_enabled) {
           innerWidget = CustomInkWell(
             onTap: buttonState != EButtonState.disabled ? widget.onTap : null,
+            onTapCancel: released,
+            onTapDown: onPress,
             onHover: onHover,
             child: innerBuilder,
           );

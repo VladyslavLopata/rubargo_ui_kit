@@ -67,7 +67,10 @@ class BargoLink extends StatelessWidget {
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    BargoText(text),
+                    BargoText(
+                      text,
+                      style: _getTextStyle(),
+                    ),
                     if (icon != null) ...[
                       const SizedBox(width: 10),
                       icon!,
@@ -81,18 +84,18 @@ class BargoLink extends StatelessWidget {
             data: const IconThemeData(color: BargoColor.placeholder),
             child: DefaultTextStyle(
               style: const TextStyle(color: BargoColor.placeholder),
-              child: DefaultBargoTextStyle(
-                style: _getTextStyle(),
-                child: Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    BargoText(text),
-                    if (icon != null) ...[
-                      const SizedBox(width: 10),
-                      icon!,
-                    ]
-                  ],
-                ),
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  BargoText(
+                    text,
+                    style: _getTextStyle(),
+                  ),
+                  if (icon != null) ...[
+                    const SizedBox(width: 10),
+                    icon!,
+                  ]
+                ],
               ),
             ),
           ),
@@ -100,18 +103,18 @@ class BargoLink extends StatelessWidget {
             data: const IconThemeData(color: BargoColor.press),
             child: DefaultTextStyle(
               style: const TextStyle(color: BargoColor.press),
-              child: DefaultBargoTextStyle(
-                style: _getTextStyle(),
-                child: Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    BargoText(text),
-                    if (icon != null) ...[
-                      const SizedBox(width: 10),
-                      icon!,
-                    ]
-                  ],
-                ),
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  BargoText(
+                    text,
+                    style: _getTextStyle(),
+                  ),
+                  if (icon != null) ...[
+                    const SizedBox(width: 10),
+                    icon!,
+                  ]
+                ],
               ),
             ),
           ),
@@ -119,18 +122,18 @@ class BargoLink extends StatelessWidget {
             data: const IconThemeData(color: BargoColor.disable),
             child: DefaultTextStyle(
               style: const TextStyle(color: BargoColor.disable),
-              child: DefaultBargoTextStyle(
-                style: _getTextStyle(),
-                child: Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    BargoText(text),
-                    if (icon != null) ...[
-                      const SizedBox(width: 10),
-                      icon!,
-                    ]
-                  ],
-                ),
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  BargoText(
+                    text,
+                    style: _getTextStyle(),
+                  ),
+                  if (icon != null) ...[
+                    const SizedBox(width: 10),
+                    icon!,
+                  ]
+                ],
               ),
             ),
           ),
