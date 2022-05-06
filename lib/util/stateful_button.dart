@@ -63,7 +63,7 @@ class StatefulButton extends StatefulWidget {
 }
 
 class _StatefulButtonState extends State<StatefulButton> {
-  final _buttonStateStream = StreamController<EButtonState>();
+  final _buttonStateStream = StreamController<EButtonState>.broadcast();
   bool _enabled = false;
 
   // This one doesn't need to be setState'd, because it is only used to control
